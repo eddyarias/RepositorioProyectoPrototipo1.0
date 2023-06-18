@@ -69,5 +69,10 @@ namespace ProyectoPrototipo_1._0
         {
 
         }
+
+        private void BSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
