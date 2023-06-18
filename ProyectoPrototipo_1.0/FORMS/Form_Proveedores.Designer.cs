@@ -74,7 +74,8 @@
             this.label15 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.BEvaluarProveedor = new System.Windows.Forms.Button();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.CBEvaluarProveedor = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.TCProveedores.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -83,7 +84,6 @@
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // TCProveedores
@@ -451,7 +451,8 @@
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.trackBar1);
+            this.tabPage5.Controls.Add(this.label16);
+            this.tabPage5.Controls.Add(this.CBEvaluarProveedor);
             this.tabPage5.Controls.Add(this.BEvaluarProveedor);
             this.tabPage5.Controls.Add(this.textBox15);
             this.tabPage5.Controls.Add(this.label15);
@@ -518,19 +519,34 @@
             // 
             // BEvaluarProveedor
             // 
-            this.BEvaluarProveedor.Location = new System.Drawing.Point(443, 125);
+            this.BEvaluarProveedor.Location = new System.Drawing.Point(602, 72);
             this.BEvaluarProveedor.Name = "BEvaluarProveedor";
             this.BEvaluarProveedor.Size = new System.Drawing.Size(104, 40);
             this.BEvaluarProveedor.TabIndex = 28;
             this.BEvaluarProveedor.Text = "Evaluar";
             this.BEvaluarProveedor.UseVisualStyleBackColor = true;
             // 
-            // trackBar1
+            // CBEvaluarProveedor
             // 
-            this.trackBar1.Location = new System.Drawing.Point(443, 53);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(104, 56);
-            this.trackBar1.TabIndex = 29;
+            this.CBEvaluarProveedor.FormattingEnabled = true;
+            this.CBEvaluarProveedor.Items.AddRange(new object[] {
+            "Excelente",
+            "Buena",
+            "Regular",
+            "Mala"});
+            this.CBEvaluarProveedor.Location = new System.Drawing.Point(424, 88);
+            this.CBEvaluarProveedor.Name = "CBEvaluarProveedor";
+            this.CBEvaluarProveedor.Size = new System.Drawing.Size(156, 24);
+            this.CBEvaluarProveedor.TabIndex = 30;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(421, 69);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(62, 16);
+            this.label16.TabIndex = 31;
+            this.label16.Text = "Atención:";
             // 
             // Form_Proveedores
             // 
@@ -553,7 +569,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -606,6 +621,7 @@
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button BEvaluarProveedor;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.ComboBox CBEvaluarProveedor;
+        private System.Windows.Forms.Label label16;
     }
 }
