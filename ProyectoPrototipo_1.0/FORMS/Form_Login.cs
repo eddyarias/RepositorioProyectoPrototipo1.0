@@ -30,7 +30,7 @@ namespace ProyectoPrototipo_1._0
             form_Menu.ShowDialog();
 
             
-            //SI YA ESTA LISTO EL SQL SERVER, DESCOMENTEN ESTO:
+            //SI YA ESTA LISTO EL SQL SERVER, DESCOMENTEN ESTO Y MODIFIQUEN LA CLASE CONNECT:
 
             /*string usuario = TBUsername.Text;
             string pass = TBPassword.Text;
