@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Menu));
             this.bttModuloInventario = new System.Windows.Forms.Button();
             this.bttModuloClientes = new System.Windows.Forms.Button();
             this.bttModuloProveedores = new System.Windows.Forms.Button();
@@ -35,6 +36,8 @@
             this.bttModuloCompras = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bttModuloInventario
@@ -91,7 +94,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 34.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(144, 270);
+            this.label1.Location = new System.Drawing.Point(147, 265);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(760, 67);
             this.label1.TabIndex = 5;
@@ -101,11 +104,20 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 34.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(251, 410);
+            this.label2.Location = new System.Drawing.Point(252, 366);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(586, 67);
             this.label2.TabIndex = 6;
             this.label2.Text = "*Nombre del sistema*";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(33, 194);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(500, 445);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // Form_Menu
             // 
@@ -114,6 +126,7 @@
             this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bttModuloCompras);
             this.Controls.Add(this.bttModuloVentas);
             this.Controls.Add(this.bttModuloProveedores);
@@ -122,6 +135,7 @@
             this.Name = "Form_Menu";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,6 +150,7 @@
         private System.Windows.Forms.Button bttModuloCompras;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

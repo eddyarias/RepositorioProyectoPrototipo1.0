@@ -152,6 +152,7 @@
   <ItemGroup>
     <Content Include="DOCUMENTOS\BIBLIOTECAS_NECESARIAS.txt" />
     <Content Include="DOCUMENTOS\COMENTARIOS.txt" />
+    <Content Include="RECURSOS\REC_FORM_MENU\Big_Chungus.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
