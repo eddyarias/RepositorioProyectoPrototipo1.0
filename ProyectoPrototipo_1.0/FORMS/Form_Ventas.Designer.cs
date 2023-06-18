@@ -46,6 +46,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
@@ -59,8 +61,6 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.TabSecuencialVentas.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -74,7 +74,7 @@
             this.TabSecuencialVentas.Controls.Add(this.tabPage2);
             this.TabSecuencialVentas.Controls.Add(this.tabPage3);
             this.TabSecuencialVentas.Controls.Add(this.tabPage4);
-            this.TabSecuencialVentas.Location = new System.Drawing.Point(12, 12);
+            this.TabSecuencialVentas.Location = new System.Drawing.Point(42, 12);
             this.TabSecuencialVentas.Name = "TabSecuencialVentas";
             this.TabSecuencialVentas.SelectedIndex = 0;
             this.TabSecuencialVentas.Size = new System.Drawing.Size(759, 415);
@@ -252,6 +252,22 @@
             this.tabPage3.Text = "Cobro";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(73, 322);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(302, 22);
+            this.textBox7.TabIndex = 10;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(38, 280);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(132, 16);
+            this.label11.TabIndex = 9;
+            this.label11.Text = "Agregar descripción:";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -390,27 +406,11 @@
             this.button4.Text = "Enviar al correo electronico cliente";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(38, 280);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(132, 16);
-            this.label11.TabIndex = 9;
-            this.label11.Text = "Agregar descripción:";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(73, 322);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(302, 22);
-            this.textBox7.TabIndex = 10;
-            // 
             // Form_Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.TabSecuencialVentas);
             this.Name = "Form_Ventas";
             this.Text = "FormularioVentas";

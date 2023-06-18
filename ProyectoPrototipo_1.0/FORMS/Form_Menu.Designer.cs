@@ -43,7 +43,7 @@
             // 
             // bttModuloInventario
             // 
-            this.bttModuloInventario.Location = new System.Drawing.Point(197, 12);
+            this.bttModuloInventario.Location = new System.Drawing.Point(752, 12);
             this.bttModuloInventario.Name = "bttModuloInventario";
             this.bttModuloInventario.Size = new System.Drawing.Size(179, 142);
             this.bttModuloInventario.TabIndex = 0;
@@ -53,37 +53,37 @@
             // 
             // bttModuloClientes
             // 
-            this.bttModuloClientes.Location = new System.Drawing.Point(382, 12);
+            this.bttModuloClientes.Location = new System.Drawing.Point(567, 12);
             this.bttModuloClientes.Name = "bttModuloClientes";
             this.bttModuloClientes.Size = new System.Drawing.Size(179, 142);
             this.bttModuloClientes.TabIndex = 1;
-            this.bttModuloClientes.Text = "MÓDULO DE CLIENTES:";
+            this.bttModuloClientes.Text = "MÓDULO DE CLIENTES";
             this.bttModuloClientes.UseVisualStyleBackColor = true;
             this.bttModuloClientes.Click += new System.EventHandler(this.bttModuloClientes_Click);
             // 
             // bttModuloProveedores
             // 
-            this.bttModuloProveedores.Location = new System.Drawing.Point(12, 12);
+            this.bttModuloProveedores.Location = new System.Drawing.Point(382, 12);
             this.bttModuloProveedores.Name = "bttModuloProveedores";
             this.bttModuloProveedores.Size = new System.Drawing.Size(179, 142);
             this.bttModuloProveedores.TabIndex = 2;
-            this.bttModuloProveedores.Text = "MÓDULO DE PROVEEDORES:";
+            this.bttModuloProveedores.Text = "MÓDULO DE PROVEEDORES";
             this.bttModuloProveedores.UseVisualStyleBackColor = true;
             this.bttModuloProveedores.Click += new System.EventHandler(this.bttProveedores_Click);
             // 
             // bttModuloVentas
             // 
-            this.bttModuloVentas.Location = new System.Drawing.Point(567, 12);
+            this.bttModuloVentas.Location = new System.Drawing.Point(12, 12);
             this.bttModuloVentas.Name = "bttModuloVentas";
             this.bttModuloVentas.Size = new System.Drawing.Size(179, 142);
             this.bttModuloVentas.TabIndex = 3;
-            this.bttModuloVentas.Text = "MÓDULO DE VENTAS:";
+            this.bttModuloVentas.Text = "MÓDULO DE VENTAS";
             this.bttModuloVentas.UseVisualStyleBackColor = true;
             this.bttModuloVentas.Click += new System.EventHandler(this.bttModuloVentas_Click);
             // 
             // bttModuloCompras
             // 
-            this.bttModuloCompras.Location = new System.Drawing.Point(752, 12);
+            this.bttModuloCompras.Location = new System.Drawing.Point(197, 12);
             this.bttModuloCompras.Name = "bttModuloCompras";
             this.bttModuloCompras.Size = new System.Drawing.Size(179, 142);
             this.bttModuloCompras.TabIndex = 4;
