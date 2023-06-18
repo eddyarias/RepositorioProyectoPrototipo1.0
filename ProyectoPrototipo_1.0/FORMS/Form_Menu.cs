@@ -59,5 +59,10 @@ namespace ProyectoPrototipo_1._0
             Form_Compras form_Compras = new Form_Compras();
             form_Compras.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

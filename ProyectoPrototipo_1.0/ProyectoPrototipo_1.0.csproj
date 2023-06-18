@@ -141,18 +141,41 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="RECURSOS\BOTONES\" />
     <Folder Include="RECURSOS\REC_FORM_CLIENTES\" />
     <Folder Include="RECURSOS\REC_FORM_COMPRAS\" />
     <Folder Include="RECURSOS\REC_FORM_INVENTARIO\" />
-    <Folder Include="RECURSOS\REC_FORM_LOGIN\" />
     <Folder Include="RECURSOS\REC_FORM_PROVEEDORES\" />
     <Folder Include="RECURSOS\REC_FORM_VENTAS\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DOCUMENTOS\BIBLIOTECAS_NECESARIAS.txt" />
     <Content Include="DOCUMENTOS\COMENTARIOS.txt" />
-    <Content Include="RECURSOS\Descripcion.txt" />
+    <Content Include="RECURSOS\BOTONES\Actualizar.png" />
+    <Content Include="RECURSOS\BOTONES\ActualizarPress.png" />
+    <Content Include="RECURSOS\BOTONES\ActualizarRoll.png" />
+    <Content Include="RECURSOS\BOTONES\Buscar.png" />
+    <Content Include="RECURSOS\BOTONES\BuscarPress.png" />
+    <Content Include="RECURSOS\BOTONES\BuscarRoll.png" />
+    <Content Include="RECURSOS\BOTONES\Desahabilitado.png" />
+    <Content Include="RECURSOS\BOTONES\Eliminar.png" />
+    <Content Include="RECURSOS\BOTONES\EliminarPress.png" />
+    <Content Include="RECURSOS\BOTONES\EliminarRoll.png" />
+    <Content Include="RECURSOS\BOTONES\Guardar.png" />
+    <Content Include="RECURSOS\BOTONES\GuardarPress.png" />
+    <Content Include="RECURSOS\BOTONES\GuardarRoll.png" />
+    <Content Include="RECURSOS\BOTONES\Habilitado.png" />
+    <Content Include="RECURSOS\BOTONES\InfoIcon.png" />
+    <Content Include="RECURSOS\BOTONES\Limpiar.png" />
+    <Content Include="RECURSOS\BOTONES\Nuevo.png" />
+    <Content Include="RECURSOS\BOTONES\NuevoPress.png" />
+    <Content Include="RECURSOS\BOTONES\NuevoRoll.png" />
+    <Content Include="RECURSOS\BOTONES\Regresar.png" />
+    <Content Include="RECURSOS\BOTONES\RegresarPress.png" />
+    <Content Include="RECURSOS\BOTONES\RegresarRoll.png" />
+    <Content Include="RECURSOS\Descripcion_CarpetaRECURSOS.txt" />
+    <Content Include="RECURSOS\REC_FORM_LOGIN\IngresarIcon.png" />
+    <Content Include="RECURSOS\REC_FORM_LOGIN\PasswordIcono.png" />
+    <Content Include="RECURSOS\REC_FORM_LOGIN\UserIcono.png" />
     <Content Include="RECURSOS\REC_FORM_MENU\Big_Chungus.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

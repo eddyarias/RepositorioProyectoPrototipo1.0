@@ -94,7 +94,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 34.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(147, 265);
+            this.label1.Location = new System.Drawing.Point(41, 229);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(760, 67);
             this.label1.TabIndex = 5;
@@ -104,7 +104,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 34.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(252, 366);
+            this.label2.Location = new System.Drawing.Point(41, 410);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(586, 67);
             this.label2.TabIndex = 6;
@@ -113,11 +113,12 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(33, 194);
+            this.pictureBox1.Location = new System.Drawing.Point(382, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(500, 445);
+            this.pictureBox1.Size = new System.Drawing.Size(564, 660);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form_Menu
             // 
@@ -126,12 +127,12 @@
             this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bttModuloCompras);
             this.Controls.Add(this.bttModuloVentas);
             this.Controls.Add(this.bttModuloProveedores);
             this.Controls.Add(this.bttModuloClientes);
             this.Controls.Add(this.bttModuloInventario);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Form_Menu";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
