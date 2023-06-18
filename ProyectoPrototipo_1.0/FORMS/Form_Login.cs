@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Farmacia;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -21,12 +23,35 @@ namespace ProyectoPrototipo_1._0
                                       (Screen.PrimaryScreen.Bounds.Height - this.Height) / 2); ;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BLogin_Click(object sender, EventArgs e)
         {
+            //Para iniciar sin autenticaciòn
+            /*this.Hide();
             Form_Menu form_Menu = new Form_Menu();
-            form_Menu.Show();
+            form_Menu.ShowDialog();*/
 
-            this.Hide();
+            
+            //SI YA ESTA LISTO EL SQL SERVER, DESCOMENTEN ESTO:
+
+            /*string usuario = TBUsername.Text;
+            string pass = TBPassword.Text;
+
+            Connect conexion = new Connect(usuario, pass);
+            SqlConnection connection = conexion.RealizarConexion();
+
+            if (connection != null)
+            {
+                // La conexión fue exitosa
+                MessageBox.Show("Conexión exitosa.");
+                this.Hide();
+                Form_Menu form_Menu = new Form_Menu();
+                form_Menu.ShowDialog();
+            }
+            else
+            {
+                // La conexión falló, muestra un mensaje de error
+                MessageBox.Show("Error al conectar a la base de datos.");
+            }*/
         }
     }
 }

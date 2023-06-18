@@ -53,6 +53,7 @@
     <Compile Include="CLASES\Class_Menu.cs" />
     <Compile Include="CLASES\Class_Proveedores.cs" />
     <Compile Include="CLASES\Class_Ventas.cs" />
+    <Compile Include="Connect.cs" />
     <Compile Include="FORMS\Form_Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
