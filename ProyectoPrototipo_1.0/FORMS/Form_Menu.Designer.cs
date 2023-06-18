@@ -68,7 +68,7 @@
             this.bttModuloProveedores.TabIndex = 2;
             this.bttModuloProveedores.Text = "MÓDULO DE PROVEEDORES:";
             this.bttModuloProveedores.UseVisualStyleBackColor = true;
-            this.bttModuloProveedores.Click += new System.EventHandler(this.button3_Click);
+            this.bttModuloProveedores.Click += new System.EventHandler(this.bttProveedores_Click);
             // 
             // bttModuloVentas
             // 
@@ -113,9 +113,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(106, -70);
+            this.pictureBox1.Location = new System.Drawing.Point(697, 153);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(563, 676);
+            this.pictureBox1.Size = new System.Drawing.Size(160, 138);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -124,7 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1079, 602);
+            this.ClientSize = new System.Drawing.Size(948, 602);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bttModuloCompras);
@@ -133,6 +134,7 @@
             this.Controls.Add(this.bttModuloClientes);
             this.Controls.Add(this.bttModuloInventario);
             this.Controls.Add(this.pictureBox1);
+            this.IsMdiContainer = true;
             this.Name = "Form_Menu";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
