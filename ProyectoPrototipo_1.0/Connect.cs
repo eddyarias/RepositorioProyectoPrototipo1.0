@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
-namespace Farmacia
+namespace ProyectoPrototipo_1._0
 {
 
     public class Connect
