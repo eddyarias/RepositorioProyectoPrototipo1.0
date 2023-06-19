@@ -149,6 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DOCUMENTOS\BIBLIOTECAS_NECESARIAS.txt" />
+    <Content Include="DOCUMENTOS\ClaseConnectEddy.txt" />
     <Content Include="DOCUMENTOS\COMENTARIOS.txt" />
     <Content Include="RECURSOS\BOTONES\Actualizar.png" />
     <Content Include="RECURSOS\BOTONES\ActualizarPress.png" />
