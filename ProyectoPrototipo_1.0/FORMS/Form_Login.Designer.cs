@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Login));
             this.BLogin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,11 +42,11 @@
             // BLogin
             // 
             this.BLogin.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.BLogin.Location = new System.Drawing.Point(93, 155);
+            this.BLogin.Image = global::ProyectoPrototipo_1._0.Properties.Resources.IngresarIcon;
+            this.BLogin.Location = new System.Drawing.Point(59, 152);
             this.BLogin.Name = "BLogin";
-            this.BLogin.Size = new System.Drawing.Size(143, 51);
+            this.BLogin.Size = new System.Drawing.Size(190, 55);
             this.BLogin.TabIndex = 0;
-            this.BLogin.Text = "Login";
             this.BLogin.UseVisualStyleBackColor = false;
             this.BLogin.Click += new System.EventHandler(this.BLogin_Click);
             // 
@@ -86,7 +85,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::ProyectoPrototipo_1._0.Properties.Resources.Logo_Sysmacy2;
             this.pictureBox1.Location = new System.Drawing.Point(3, 7);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(265, 239);

@@ -126,6 +126,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -175,6 +176,7 @@
     <Content Include="RECURSOS\BOTONES\RegresarRoll.png" />
     <Content Include="RECURSOS\Descripcion_CarpetaRECURSOS.txt" />
     <Content Include="RECURSOS\REC_FORM_LOGIN\IngresarIcon.png" />
+    <Content Include="RECURSOS\REC_FORM_LOGIN\Logo Sysmacy2.png" />
     <Content Include="RECURSOS\REC_FORM_LOGIN\PasswordIcono.png" />
     <Content Include="RECURSOS\REC_FORM_LOGIN\UserIcono.png" />
     <Content Include="RECURSOS\REC_FORM_MENU\Big_Chungus.jpg" />
