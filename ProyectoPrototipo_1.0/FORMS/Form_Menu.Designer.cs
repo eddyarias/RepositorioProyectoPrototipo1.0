@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Menu));
             this.bttModuloInventario = new System.Windows.Forms.Button();
             this.bttModuloClientes = new System.Windows.Forms.Button();
             this.bttModuloProveedores = new System.Windows.Forms.Button();
@@ -36,9 +35,7 @@
             this.bttModuloCompras = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BSalir = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bttModuloInventario
@@ -95,7 +92,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.Location = new System.Drawing.Point(39, 170);
+            this.label1.Location = new System.Drawing.Point(36, 170);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(870, 39);
             this.label1.TabIndex = 5;
@@ -111,17 +108,6 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "SYSMACY";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(139, 150);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(156, 139);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // BSalir
             // 
             this.BSalir.Location = new System.Drawing.Point(843, 789);
@@ -136,6 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(943, 844);
             this.Controls.Add(this.BSalir);
             this.Controls.Add(this.label2);
@@ -145,12 +132,10 @@
             this.Controls.Add(this.bttModuloProveedores);
             this.Controls.Add(this.bttModuloClientes);
             this.Controls.Add(this.bttModuloInventario);
-            this.Controls.Add(this.pictureBox1);
             this.IsMdiContainer = true;
             this.Name = "Form_Menu";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,7 +150,6 @@
         private System.Windows.Forms.Button bttModuloCompras;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BSalir;
     }
 }
