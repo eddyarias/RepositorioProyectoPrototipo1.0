@@ -13,6 +13,25 @@ namespace ProyectoPrototipo_1._0
 {
     public partial class Form_Ventas : Form
     {
+
+        // Variable para almacenar el índice de la pestaña actual
+        private int indicePestanaActual = 0;
+
+        List<float> arregloPrecios = new List<float>();
+        List<int> arregloCantidad = new List<int>();
+        List<String> arregloProductos = new List<String>();
+
+        bool seRealizaronEdiciones = false;
+
+        int cedulaCLiente;
+        String nombreCliente;
+        String apellidoCliente;
+        String telefonoCliente;
+        String direccionCliente;
+        String correoCliente;
+
+        float TotalVenta = 0;
+
         public Form_Ventas()
         {
             InitializeComponent();
@@ -28,8 +47,6 @@ namespace ProyectoPrototipo_1._0
             this.TabSecuencialVentas.TabPages[1].Enabled = false;
             this.TabSecuencialVentas.TabPages[2].Enabled = false;
             this.TabSecuencialVentas.TabPages[3].Enabled = false;
-
-
 
 
             dataGridView1.Rows.Add("Pasta dental       .  ", 3.99);
@@ -49,22 +66,14 @@ namespace ProyectoPrototipo_1._0
             dataGridView1.Rows.Add("Antihistamínico    .  ", 3.99);
             dataGridView1.Rows.Add("Desodorante        .  ", 7.99);
 
-            dataGridView1.Columns[0].Width = 8;
+            dataGridView1.Columns[0].Width = 3;
+
             // Establecer el ancho de la columna "Producto"
-            dataGridView1.Columns["Producto"].Width = 85;
-
-            // Establecer el ancho de la columna "Precio"
+            dataGridView1.Columns["Producto"].Width = 100;
             dataGridView1.Columns["Precio"].Width = 45;
-
-            dataGridView1.Columns["Cantidad"].Width = 36;
-
+            dataGridView1.Columns["Cantidad"].Width = 50;
             dataGridView1.Columns["Cantidad"].ReadOnly = false;
-
         }
-
-
-        // Variable para almacenar el índice de la pestaña actual
-        private int indicePestanaActual = 0;
 
         // Método para avanzar a la siguiente pestaña
         private void AvanzarPestana()
@@ -83,33 +92,35 @@ namespace ProyectoPrototipo_1._0
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             this.AvanzarPestana();
-        }
+        }  
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.AvanzarPestana();
+            if(txtBcedulaCliente.Text!=string.Empty && txtBnombresCliente.Text!= string.Empty && txtBapellidosClientes.Text!= string.Empty &&
+            txtBtelefonoCliente.Text!= string.Empty && txtBdireccionCliente.Text!= string.Empty && txtBcorreoCliente.Text!= string.Empty)
+            {
+                cedulaCLiente = int.Parse(txtBcedulaCliente.Text);
+                nombreCliente = txtBnombresCliente.Text;
+                apellidoCliente = txtBapellidosClientes.Text;
+                direccionCliente = txtBdireccionCliente.Text;
+                telefonoCliente = txtBtelefonoCliente.Text;
+                correoCliente = txtBcorreoCliente.Text;
+
+                this.AvanzarPestana();
+            }
+            else
+            {
+                MessageBox.Show("Ingrese todos los campos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.AvanzarPestana();
         }
-
-        List<float> arregloPrecios = new List<float>();
-        List<int> arregloCantidad = new List<int>();
-        List<String> arregloProductos = new List<String>();
-
-        int productosSeleccionados;
-
-        bool seRealizaronEdiciones=false;
 
         private void dataGridView1_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
@@ -128,28 +139,60 @@ namespace ProyectoPrototipo_1._0
                 precioCell != null && precioCell.Value != null &&
                 productoCell != null && productoCell.Value != null)
             {
-                if (int.TryParse(cantCell.Value.ToString(), out int cantidad) &&
-                    float.TryParse(precioCell.Value.ToString(), out float precio))
+                if (!arregloProductos.Contains(productoCell.Value.ToString()))
                 {
-                    string producto = productoCell.Value.ToString();
+                    if (int.TryParse(cantCell.Value.ToString(), out int cantidad) && float.TryParse(precioCell.Value.ToString(), out float precio))
+                    {
+                        string producto = productoCell.Value.ToString();
 
-                    arregloCantidad.Add(cantidad);
-                    arregloPrecios.Add(precio);
-                    arregloProductos.Add(producto);
+                        if (cantidad != 0)
+                        {
+                            arregloCantidad.Add(cantidad);
+                            arregloPrecios.Add(precio);
+                            arregloProductos.Add(producto);
+                        }
 
-                    this.label13.Text = ImprimirInformacion(arregloPrecios, arregloCantidad, arregloProductos);
-                    this.lbTotal.Text = TotalVenta.ToString();
+                        this.label13.Text = ImprimirInformacion(arregloPrecios, arregloCantidad, arregloProductos);
+                        this.lbTotal.Text = TotalVenta.ToString();
+                    }
+                }
+                else
+                {
+                    string productoExistente = productoCell.Value.ToString();
+                    int indice = arregloProductos.IndexOf(productoExistente);
+
+                    if (indice >= 0)
+                    {
+                        if (int.TryParse(cantCell.Value.ToString(), out int nuevaCantidad))
+                        {
+                            if (nuevaCantidad != 0)
+                            {
+                                arregloCantidad[indice] = nuevaCantidad;
+                                // También puedes actualizar el precio si es necesario
+                                // arregloPrecios[indice] = nuevoPrecio;
+                            }
+                            else
+                            {
+                                // Eliminar el producto de las listas
+                                arregloCantidad.RemoveAt(indice);
+                                arregloPrecios.RemoveAt(indice);
+                                arregloProductos.RemoveAt(indice);
+                            }
+
+                            this.label13.Text = ImprimirInformacion(arregloPrecios, arregloCantidad, arregloProductos);
+                            this.lbTotal.Text = TotalVenta.ToString();
+                        }
+                    }
                 }
             }
         }
-
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             // Manejar el evento de clic del botón
             if (seRealizaronEdiciones)
             {
-                this.label13.Text=ImprimirInformacion(arregloPrecios, arregloCantidad, arregloProductos );
+                this.label13.Text = ImprimirInformacion(arregloPrecios, arregloCantidad, arregloProductos);
             }
             else
             {
@@ -161,11 +204,12 @@ namespace ProyectoPrototipo_1._0
             seRealizaronEdiciones = false;
         }
 
-        float TotalVenta=0;
         private string ImprimirInformacion(List<float> arregloPrecios, List<int> arregloCantidad, List<string> arregloProductos)
         {
             int cantidadElementos = arregloPrecios.Count;
             StringBuilder sb = new StringBuilder();
+
+            TotalVenta = 0; // Reiniciar el valor del total de la venta
 
             for (int i = 0; i < cantidadElementos; i++)
             {
@@ -176,12 +220,35 @@ namespace ProyectoPrototipo_1._0
                 float total = precio * cantidad;
                 TotalVenta += total;
 
-                sb.AppendLine(producto.ToString() + precio.ToString().PadRight(15)+ cantidad.ToString().PadRight(8) + total.ToString());
+                sb.AppendLine(producto.ToString() + precio.ToString().PadRight(15) + cantidad.ToString().PadRight(8) + total.ToString());
                 precio = cantidad = 0;
                 total = 0;
             }
 
             return sb.ToString();
+        }
+        private void checkedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Desmarca todos los elementos excepto el que se está seleccionando actualmente
+            for (int i = 0; i < checkedListBox1.Items.Count; i++)
+            {
+                if (i != e.Index)
+                {
+                    checkedListBox1.SetItemChecked(i, false);
+                }
+            }
+        }
+
+        private void checkedListBox2_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Desmarca todos los elementos excepto el que se está seleccionando actualmente
+            for (int i = 0; i < checkedListBox2.Items.Count; i++)
+            {
+                if (i != e.Index)
+                {
+                    checkedListBox2.SetItemChecked(i, false);
+                }
+            }
         }
     }
 }
