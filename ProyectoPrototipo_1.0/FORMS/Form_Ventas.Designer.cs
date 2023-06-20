@@ -30,7 +30,12 @@
         {
             this.TabSecuencialVentas = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button3 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -62,10 +67,9 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.lbTotal = new System.Windows.Forms.Label();
             this.TabSecuencialVentas.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -80,23 +84,47 @@
             this.TabSecuencialVentas.Controls.Add(this.tabPage2);
             this.TabSecuencialVentas.Controls.Add(this.tabPage3);
             this.TabSecuencialVentas.Controls.Add(this.tabPage4);
-            this.TabSecuencialVentas.Location = new System.Drawing.Point(42, 12);
+            this.TabSecuencialVentas.Location = new System.Drawing.Point(3, 2);
             this.TabSecuencialVentas.Name = "TabSecuencialVentas";
             this.TabSecuencialVentas.SelectedIndex = 0;
-            this.TabSecuencialVentas.Size = new System.Drawing.Size(759, 415);
+            this.TabSecuencialVentas.Size = new System.Drawing.Size(826, 446);
             this.TabSecuencialVentas.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.lbTotal);
+            this.tabPage1.Controls.Add(this.label15);
+            this.tabPage1.Controls.Add(this.label14);
+            this.tabPage1.Controls.Add(this.label13);
+            this.tabPage1.Controls.Add(this.label12);
             this.tabPage1.Controls.Add(this.dataGridView1);
             this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(751, 386);
+            this.tabPage1.Size = new System.Drawing.Size(818, 417);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Seleccion Producto";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Cascadia Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(368, 79);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(16, 17);
+            this.label13.TabIndex = 14;
+            this.label13.Text = ".";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(368, 52);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(386, 16);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "PRODUCTO              PRECIO UNI.            CANT.           SUBTOTAL";
             // 
             // dataGridView1
             // 
@@ -106,19 +134,43 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Producto,
-            this.Descripcion,
             this.Precio,
             this.Cantidad});
-            this.dataGridView1.Location = new System.Drawing.Point(24, 39);
+            this.dataGridView1.Location = new System.Drawing.Point(6, 40);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(482, 213);
+            this.dataGridView1.Size = new System.Drawing.Size(319, 359);
             this.dataGridView1.TabIndex = 12;
+            this.dataGridView1.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEndEdit);
+            // 
+            // Producto
+            // 
+            this.Producto.HeaderText = "Producto";
+            this.Producto.MinimumWidth = 6;
+            this.Producto.Name = "Producto";
+            this.Producto.ReadOnly = true;
+            this.Producto.Width = 125;
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.MinimumWidth = 6;
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            this.Precio.Width = 125;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.MinimumWidth = 6;
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
+            this.Cantidad.Width = 125;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(589, 311);
+            this.button3.Location = new System.Drawing.Point(659, 342);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(156, 69);
             this.button3.TabIndex = 11;
@@ -144,7 +196,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(751, 386);
+            this.tabPage2.Size = new System.Drawing.Size(818, 417);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Datos cliente";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -272,7 +324,7 @@
             this.tabPage3.Controls.Add(this.button1);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(751, 386);
+            this.tabPage3.Size = new System.Drawing.Size(818, 417);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Cobro";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -399,7 +451,7 @@
             this.tabPage4.Controls.Add(this.button4);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(751, 386);
+            this.tabPage4.Size = new System.Drawing.Size(818, 417);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Factura";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -431,37 +483,32 @@
             this.button4.Text = "Enviar al correo electronico cliente";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // Producto
+            // label14
             // 
-            this.Producto.HeaderText = "Producto";
-            this.Producto.MinimumWidth = 6;
-            this.Producto.Name = "Producto";
-            this.Producto.ReadOnly = true;
-            this.Producto.Width = 125;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(656, 312);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(51, 16);
+            this.label14.TabIndex = 15;
+            this.label14.Text = "TOTAL";
             // 
-            // Descripcion
+            // label15
             // 
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.MinimumWidth = 6;
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            this.Descripcion.Width = 125;
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(368, 286);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(406, 16);
+            this.label15.TabIndex = 16;
+            this.label15.Text = "_________________________________________________________";
             // 
-            // Precio
+            // lbTotal
             // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.MinimumWidth = 6;
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            this.Precio.Width = 125;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.MinimumWidth = 6;
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.ReadOnly = true;
-            this.Cantidad.Width = 125;
+            this.lbTotal.AutoSize = true;
+            this.lbTotal.Location = new System.Drawing.Point(736, 312);
+            this.lbTotal.Name = "lbTotal";
+            this.lbTotal.Size = new System.Drawing.Size(38, 16);
+            this.lbTotal.TabIndex = 17;
+            this.lbTotal.Text = "00.00";
             // 
             // Form_Ventas
             // 
@@ -474,6 +521,7 @@
             this.Load += new System.EventHandler(this.Form_Ventas_Load);
             this.TabSecuencialVentas.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
@@ -520,9 +568,13 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Producto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
+        private System.Windows.Forms.Label lbTotal;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
     }
 }
