@@ -30,6 +30,8 @@ namespace ProyectoPrototipo_1._0
         String direccionCliente;
         String correoCliente;
 
+        String descripcionAdicionalCobro;
+
         float TotalVenta = 0;
 
         public Form_Ventas()
@@ -99,27 +101,52 @@ namespace ProyectoPrototipo_1._0
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(txtBcedulaCliente.Text!=string.Empty && txtBnombresCliente.Text!= string.Empty && txtBapellidosClientes.Text!= string.Empty &&
-            txtBtelefonoCliente.Text!= string.Empty && txtBdireccionCliente.Text!= string.Empty && txtBcorreoCliente.Text!= string.Empty)
-            {
-                cedulaCLiente = int.Parse(txtBcedulaCliente.Text);
-                nombreCliente = txtBnombresCliente.Text;
-                apellidoCliente = txtBapellidosClientes.Text;
-                direccionCliente = txtBdireccionCliente.Text;
-                telefonoCliente = txtBtelefonoCliente.Text;
-                correoCliente = txtBcorreoCliente.Text;
+            //if(txtBcedulaCliente.Text!=string.Empty && txtBnombresCliente.Text!= string.Empty && txtBapellidosClientes.Text!= string.Empty &&
+            //txtBtelefonoCliente.Text!= string.Empty && txtBdireccionCliente.Text!= string.Empty && txtBcorreoCliente.Text!= string.Empty)
+            //{
+            //    cedulaCLiente = int.Parse(txtBcedulaCliente.Text);
+            //    nombreCliente = txtBnombresCliente.Text;
+            //    apellidoCliente = txtBapellidosClientes.Text;
+            //    direccionCliente = txtBdireccionCliente.Text;
+            //    telefonoCliente = txtBtelefonoCliente.Text;
+            //    correoCliente = txtBcorreoCliente.Text;
 
                 this.AvanzarPestana();
-            }
-            else
-            {
-                MessageBox.Show("Ingrese todos los campos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Ingrese todos los campos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //}
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.AvanzarPestana();
+            if (checkedListBox1.CheckedItems.Count>0 && checkedListBox2.CheckedItems.Count>0&&comboBox1.SelectedItem!=null)
+            {
+                if (checkedListBox2.SelectedItem.ToString() == "SI") {
+                    if (comboBox2.SelectedItem != null)
+                    {
+                        this.AvanzarPestana();
+                        descripcionAdicionalCobro = txtBDescripcionAdicional.Text;
+                    }
+                    else {
+                        // Muestra un mensaje de error
+                        MessageBox.Show("Debes seleccionar al menos una opción en el descuento.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    this.AvanzarPestana();
+                    descripcionAdicionalCobro = txtBDescripcionAdicional.Text;
+                }
+            }
+            else
+            {
+                // Muestra un mensaje de error
+                MessageBox.Show("Debes seleccionar todos los campos.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
         }
 
         private void dataGridView1_CellEndEdit(object sender, DataGridViewCellEventArgs e)
@@ -226,29 +253,6 @@ namespace ProyectoPrototipo_1._0
             }
 
             return sb.ToString();
-        }
-        private void checkedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
-        {
-            // Desmarca todos los elementos excepto el que se está seleccionando actualmente
-            for (int i = 0; i < checkedListBox1.Items.Count; i++)
-            {
-                if (i != e.Index)
-                {
-                    checkedListBox1.SetItemChecked(i, false);
-                }
-            }
-        }
-
-        private void checkedListBox2_ItemCheck(object sender, ItemCheckEventArgs e)
-        {
-            // Desmarca todos los elementos excepto el que se está seleccionando actualmente
-            for (int i = 0; i < checkedListBox2.Items.Count; i++)
-            {
-                if (i != e.Index)
-                {
-                    checkedListBox2.SetItemChecked(i, false);
-                }
-            }
         }
     }
 }
