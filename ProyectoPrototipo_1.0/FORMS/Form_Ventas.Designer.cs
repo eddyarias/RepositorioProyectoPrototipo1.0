@@ -67,12 +67,12 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.TabSecuencialVentas.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -488,6 +488,34 @@
             this.tabPage4.Text = "Factura";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(42, 78);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(51, 16);
+            this.label18.TabIndex = 5;
+            this.label18.Text = "label18";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(42, 174);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(51, 16);
+            this.label17.TabIndex = 4;
+            this.label17.Text = "label17";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(301, 20);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(204, 25);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "FACTURA N°   00001";
+            // 
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(296, 342);
@@ -515,34 +543,6 @@
             this.button4.Text = "Enviar al correo electronico cliente";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(301, 20);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(204, 25);
-            this.label16.TabIndex = 3;
-            this.label16.Text = "FACTURA N°   00001";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(42, 174);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(51, 16);
-            this.label17.TabIndex = 4;
-            this.label17.Text = "label17";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(42, 78);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(51, 16);
-            this.label18.TabIndex = 5;
-            this.label18.Text = "label18";
-            // 
             // Form_Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -550,7 +550,7 @@
             this.ClientSize = new System.Drawing.Size(832, 453);
             this.Controls.Add(this.TabSecuencialVentas);
             this.Name = "Form_Ventas";
-            this.Text = "FormularioVentas";
+            this.Text = "Ventas";
             this.Load += new System.EventHandler(this.Form_Ventas_Load);
             this.TabSecuencialVentas.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

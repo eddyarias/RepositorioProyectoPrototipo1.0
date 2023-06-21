@@ -30,6 +30,7 @@
         {
             this.TCProveedores = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.BInfoProveedor = new System.Windows.Forms.Button();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -55,35 +56,34 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.BInfoProveedor = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.BEvaluacion = new System.Windows.Forms.Button();
             this.TCInfoProveedor = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.BEvaluacion = new System.Windows.Forms.Button();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.BEvaluarProveedor = new System.Windows.Forms.Button();
-            this.CBEvaluarProveedor = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.CBEvaluarProveedor = new System.Windows.Forms.ComboBox();
+            this.BEvaluarProveedor = new System.Windows.Forms.Button();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.TCProveedores.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.TCInfoProveedor.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // TCProveedores
@@ -131,6 +131,16 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // BInfoProveedor
+            // 
+            this.BInfoProveedor.Location = new System.Drawing.Point(661, 170);
+            this.BInfoProveedor.Name = "BInfoProveedor";
+            this.BInfoProveedor.Size = new System.Drawing.Size(117, 37);
+            this.BInfoProveedor.TabIndex = 29;
+            this.BInfoProveedor.Text = "Ver proveedor";
+            this.BInfoProveedor.UseVisualStyleBackColor = true;
+            this.BInfoProveedor.Click += new System.EventHandler(this.BInfoProveedor_Click);
             // 
             // textBox12
             // 
@@ -345,69 +355,6 @@
             this.tabPage2.Text = "Información";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 256);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(800, 174);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // BInfoProveedor
-            // 
-            this.BInfoProveedor.Location = new System.Drawing.Point(661, 170);
-            this.BInfoProveedor.Name = "BInfoProveedor";
-            this.BInfoProveedor.Size = new System.Drawing.Size(117, 37);
-            this.BInfoProveedor.TabIndex = 29;
-            this.BInfoProveedor.Text = "Ver proveedor";
-            this.BInfoProveedor.UseVisualStyleBackColor = true;
-            this.BInfoProveedor.Click += new System.EventHandler(this.BInfoProveedor_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(55, 15);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(39, 16);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "RUC:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 48);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(88, 16);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "Razón social:";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(100, 42);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(119, 22);
-            this.textBox10.TabIndex = 6;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(100, 9);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(119, 22);
-            this.textBox11.TabIndex = 7;
-            // 
-            // BEvaluacion
-            // 
-            this.BEvaluacion.BackColor = System.Drawing.Color.Transparent;
-            this.BEvaluacion.Location = new System.Drawing.Point(51, 126);
-            this.BEvaluacion.Name = "BEvaluacion";
-            this.BEvaluacion.Size = new System.Drawing.Size(168, 37);
-            this.BEvaluacion.TabIndex = 8;
-            this.BEvaluacion.Text = "Evaluar proveedor";
-            this.BEvaluacion.UseVisualStyleBackColor = false;
-            this.BEvaluacion.Click += new System.EventHandler(this.BEvaluacion_Click);
-            // 
             // TCInfoProveedor
             // 
             this.TCInfoProveedor.Controls.Add(this.tabPage3);
@@ -429,6 +376,16 @@
             this.tabPage3.Text = "Compras";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersWidth = 51;
+            this.dataGridView3.RowTemplate.Height = 24;
+            this.dataGridView3.Size = new System.Drawing.Size(500, 162);
+            this.dataGridView3.TabIndex = 1;
+            // 
             // tabPage4
             // 
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
@@ -439,15 +396,48 @@
             this.tabPage4.Text = "Información bancaria";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // dataGridView3
+            // BEvaluacion
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(500, 162);
-            this.dataGridView3.TabIndex = 1;
+            this.BEvaluacion.BackColor = System.Drawing.Color.Transparent;
+            this.BEvaluacion.Location = new System.Drawing.Point(51, 126);
+            this.BEvaluacion.Name = "BEvaluacion";
+            this.BEvaluacion.Size = new System.Drawing.Size(168, 37);
+            this.BEvaluacion.TabIndex = 8;
+            this.BEvaluacion.Text = "Evaluar proveedor";
+            this.BEvaluacion.UseVisualStyleBackColor = false;
+            this.BEvaluacion.Click += new System.EventHandler(this.BEvaluacion_Click);
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(100, 9);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(119, 22);
+            this.textBox11.TabIndex = 7;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(100, 42);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(119, 22);
+            this.textBox10.TabIndex = 6;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 48);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(88, 16);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Razón social:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(55, 15);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(39, 16);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "RUC:";
             // 
             // tabPage5
             // 
@@ -468,63 +458,14 @@
             this.tabPage5.Text = "Evaluación";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // label13
+            // label16
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(16, 17);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(39, 16);
-            this.label13.TabIndex = 4;
-            this.label13.Text = "RUC:";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(61, 14);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(119, 22);
-            this.textBox13.TabIndex = 8;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(232, 17);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(88, 16);
-            this.label14.TabIndex = 9;
-            this.label14.Text = "Razón social:";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(326, 14);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(119, 22);
-            this.textBox14.TabIndex = 10;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(16, 53);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(102, 16);
-            this.label15.TabIndex = 25;
-            this.label15.Text = "Observaciones:";
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(19, 72);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(311, 93);
-            this.textBox15.TabIndex = 26;
-            // 
-            // BEvaluarProveedor
-            // 
-            this.BEvaluarProveedor.Location = new System.Drawing.Point(602, 72);
-            this.BEvaluarProveedor.Name = "BEvaluarProveedor";
-            this.BEvaluarProveedor.Size = new System.Drawing.Size(104, 40);
-            this.BEvaluarProveedor.TabIndex = 28;
-            this.BEvaluarProveedor.Text = "Evaluar";
-            this.BEvaluarProveedor.UseVisualStyleBackColor = true;
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(421, 69);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(62, 16);
+            this.label16.TabIndex = 31;
+            this.label16.Text = "Atención:";
             // 
             // CBEvaluarProveedor
             // 
@@ -539,14 +480,73 @@
             this.CBEvaluarProveedor.Size = new System.Drawing.Size(156, 24);
             this.CBEvaluarProveedor.TabIndex = 30;
             // 
-            // label16
+            // BEvaluarProveedor
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(421, 69);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(62, 16);
-            this.label16.TabIndex = 31;
-            this.label16.Text = "Atención:";
+            this.BEvaluarProveedor.Location = new System.Drawing.Point(602, 72);
+            this.BEvaluarProveedor.Name = "BEvaluarProveedor";
+            this.BEvaluarProveedor.Size = new System.Drawing.Size(104, 40);
+            this.BEvaluarProveedor.TabIndex = 28;
+            this.BEvaluarProveedor.Text = "Evaluar";
+            this.BEvaluarProveedor.UseVisualStyleBackColor = true;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(19, 72);
+            this.textBox15.Multiline = true;
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(311, 93);
+            this.textBox15.TabIndex = 26;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(16, 53);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(102, 16);
+            this.label15.TabIndex = 25;
+            this.label15.Text = "Observaciones:";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(326, 14);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(119, 22);
+            this.textBox14.TabIndex = 10;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(232, 17);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(88, 16);
+            this.label14.TabIndex = 9;
+            this.label14.Text = "Razón social:";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(61, 14);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(119, 22);
+            this.textBox13.TabIndex = 8;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(16, 17);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(39, 16);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "RUC:";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(16, 256);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(800, 174);
+            this.dataGridView1.TabIndex = 0;
             // 
             // Form_Proveedores
             // 
@@ -556,19 +556,19 @@
             this.Controls.Add(this.TCProveedores);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form_Proveedores";
-            this.Text = "FormProveedores";
+            this.Text = "Proveedores";
             this.Load += new System.EventHandler(this.Form_Proveedores_Load);
             this.TCProveedores.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.TCInfoProveedor.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

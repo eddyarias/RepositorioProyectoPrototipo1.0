@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 453);
             this.Name = "Form_Inventario";
-            this.Text = "FormInventario";
+            this.Text = "Inventario";
             this.Load += new System.EventHandler(this.Form_Inventario_Load);
             this.ResumeLayout(false);
 
