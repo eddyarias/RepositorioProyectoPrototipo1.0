@@ -521,6 +521,7 @@
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Inventario";
             this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // label14
             // 
@@ -630,7 +631,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(841, 433);
+            this.tabPage5.Size = new System.Drawing.Size(907, 449);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "Historial";
             this.tabPage5.UseVisualStyleBackColor = true;

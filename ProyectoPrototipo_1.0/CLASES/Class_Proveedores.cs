@@ -10,29 +10,29 @@ namespace ProyectoPrototipo_1._0.CLASES
     public class Class_Proveedores
     {
         [Key]
-        public int Ruc { get; set; }
+        public int ruc { get; set; }
 
-        public string Razon_Social { get; set; }
+        public string razon_social { get; set; }
 
-        public string Nombre { get; set; }
+        public string nombre { get; set; }
 
-        public string Apellido { get; set; }
+        public string apellido { get; set; }
 
-        public string Email { get; set; }
+        public string email { get; set; }
 
-        public string Ciudad { get; set; }
+        public string ciudad { get; set; }
 
-        public string Direccion { get; set; }
+        public string direccion { get; set; }
 
-        public string Telefono { get; set; }
+        public string telefono { get; set; }
 
-        public string Rubro { get; set; }
+        public string rubro { get; set; }
 
-        public string Observaciones { get; set; }
+        public string observaciones { get; set; }
 
-        public string Informacion_Bancaria { get; set; }
+        public string informacion_bancaria { get; set; }
 
-        public string Calificacion { get; set; }
+        public string calificacion { get; set; }
     }
 
 }

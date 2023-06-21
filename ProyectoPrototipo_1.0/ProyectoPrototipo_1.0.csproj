@@ -192,7 +192,6 @@
     <Content Include="RECURSOS\REC_FORM_LOGIN\PasswordIcono.png" />
     <Content Include="RECURSOS\REC_FORM_LOGIN\UserIcono.png" />
     <None Include="RECURSOS\REC_FORM_MENU\fondo.jpg" />
-    <None Include="RECURSOS\REC_FORM_MENU\fondo4.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
