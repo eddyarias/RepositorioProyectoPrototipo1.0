@@ -604,14 +604,14 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(332, 409);
+            this.dataGridView1.Size = new System.Drawing.Size(412, 409);
             this.dataGridView1.TabIndex = 1;
             // 
             // Form_Compras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 453);
+            this.ClientSize = new System.Drawing.Size(912, 473);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.TCCompras);
             this.Name = "Form_Compras";

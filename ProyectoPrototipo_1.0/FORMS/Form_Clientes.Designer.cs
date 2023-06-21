@@ -296,36 +296,36 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(448, 53);
+            this.dataGridView1.Location = new System.Drawing.Point(476, 60);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(361, 339);
+            this.dataGridView1.Size = new System.Drawing.Size(387, 339);
             this.dataGridView1.TabIndex = 28;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(476, 408);
+            this.button4.Location = new System.Drawing.Point(504, 415);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(88, 30);
+            this.button4.Size = new System.Drawing.Size(114, 30);
             this.button4.TabIndex = 39;
             this.button4.Text = "Agregar";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(592, 408);
+            this.button3.Location = new System.Drawing.Point(620, 415);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(84, 30);
+            this.button3.Size = new System.Drawing.Size(110, 30);
             this.button3.TabIndex = 38;
             this.button3.Text = "Actualizar";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(699, 408);
+            this.button2.Location = new System.Drawing.Point(727, 415);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 30);
+            this.button2.Size = new System.Drawing.Size(106, 30);
             this.button2.TabIndex = 37;
             this.button2.Text = "Eliminar";
             this.button2.UseVisualStyleBackColor = true;
@@ -334,7 +334,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 453);
+            this.ClientSize = new System.Drawing.Size(912, 473);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

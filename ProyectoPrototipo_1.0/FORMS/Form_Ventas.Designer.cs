@@ -67,16 +67,16 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
             this.TabSecuencialVentas.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -91,10 +91,10 @@
             this.TabSecuencialVentas.Controls.Add(this.tabPage2);
             this.TabSecuencialVentas.Controls.Add(this.tabPage3);
             this.TabSecuencialVentas.Controls.Add(this.tabPage4);
-            this.TabSecuencialVentas.Location = new System.Drawing.Point(3, 2);
+            this.TabSecuencialVentas.Location = new System.Drawing.Point(22, 3);
             this.TabSecuencialVentas.Name = "TabSecuencialVentas";
             this.TabSecuencialVentas.SelectedIndex = 0;
-            this.TabSecuencialVentas.Size = new System.Drawing.Size(826, 446);
+            this.TabSecuencialVentas.Size = new System.Drawing.Size(862, 446);
             this.TabSecuencialVentas.TabIndex = 0;
             // 
             // tabPage1
@@ -109,7 +109,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(818, 417);
+            this.tabPage1.Size = new System.Drawing.Size(854, 417);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Seleccion Producto";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -230,7 +230,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(818, 417);
+            this.tabPage2.Size = new System.Drawing.Size(854, 417);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Datos cliente";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -357,7 +357,7 @@
             this.tabPage3.Controls.Add(this.button1);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(818, 417);
+            this.tabPage3.Size = new System.Drawing.Size(854, 417);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Cobro";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -491,10 +491,46 @@
             this.tabPage4.Controls.Add(this.button4);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(818, 417);
+            this.tabPage4.Size = new System.Drawing.Size(854, 417);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Factura";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(178, 151);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(386, 16);
+            this.label22.TabIndex = 20;
+            this.label22.Text = "PRODUCTO              PRECIO UNI.            CANT.           SUBTOTAL";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(414, 315);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(51, 16);
+            this.label21.TabIndex = 19;
+            this.label21.Text = "TOTAL";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(504, 315);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(38, 16);
+            this.label20.TabIndex = 18;
+            this.label20.Text = "00.00";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(200, 299);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(364, 16);
+            this.label19.TabIndex = 17;
+            this.label19.Text = "___________________________________________________";
             // 
             // label18
             // 
@@ -553,47 +589,11 @@
             this.button4.Text = "Enviar al correo electronico cliente";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(200, 299);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(364, 16);
-            this.label19.TabIndex = 17;
-            this.label19.Text = "___________________________________________________";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(504, 315);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(38, 16);
-            this.label20.TabIndex = 18;
-            this.label20.Text = "00.00";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(414, 315);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(51, 16);
-            this.label21.TabIndex = 19;
-            this.label21.Text = "TOTAL";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(178, 151);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(386, 16);
-            this.label22.TabIndex = 20;
-            this.label22.Text = "PRODUCTO              PRECIO UNI.            CANT.           SUBTOTAL";
-            // 
             // Form_Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 453);
+            this.ClientSize = new System.Drawing.Size(912, 473);
             this.Controls.Add(this.TabSecuencialVentas);
             this.Name = "Form_Ventas";
             this.Text = "Ventas";

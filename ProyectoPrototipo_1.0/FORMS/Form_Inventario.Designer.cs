@@ -111,7 +111,7 @@
             this.Column2,
             this.Cantidad,
             this.Feccad});
-            this.dataGridView1.Location = new System.Drawing.Point(401, 30);
+            this.dataGridView1.Location = new System.Drawing.Point(380, 30);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -208,7 +208,7 @@
             this.groupBox1.Controls.Add(this.txtDesP);
             this.groupBox1.Location = new System.Drawing.Point(19, 18);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(329, 250);
+            this.groupBox1.Size = new System.Drawing.Size(294, 250);
             this.groupBox1.TabIndex = 54;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Producto";
@@ -453,16 +453,16 @@
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Location = new System.Drawing.Point(477, 320);
+            this.groupBox2.Location = new System.Drawing.Point(478, 319);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(408, 136);
+            this.groupBox2.Size = new System.Drawing.Size(317, 127);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Buscar Producto";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(212, 92);
+            this.button2.Location = new System.Drawing.Point(184, 86);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
@@ -471,7 +471,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(90, 92);
+            this.button1.Location = new System.Drawing.Point(62, 86);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -480,9 +480,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(181, 37);
+            this.textBox1.Location = new System.Drawing.Point(155, 37);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(201, 22);
+            this.textBox1.Size = new System.Drawing.Size(147, 22);
             this.textBox1.TabIndex = 1;
             // 
             // comboBox1
@@ -505,7 +505,7 @@
             this.tabControl2.Location = new System.Drawing.Point(-6, -6);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(978, 522);
+            this.tabControl2.Size = new System.Drawing.Size(915, 478);
             this.tabControl2.TabIndex = 3;
             // 
             // tabPage3
@@ -517,7 +517,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(970, 493);
+            this.tabPage3.Size = new System.Drawing.Size(907, 449);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Inventario";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -526,7 +526,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(84, 426);
+            this.label14.Location = new System.Drawing.Point(83, 405);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(184, 20);
             this.label14.TabIndex = 3;
@@ -540,14 +540,14 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(970, 493);
+            this.tabPage4.Size = new System.Drawing.Size(907, 449);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Caducidad";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(422, 411);
+            this.button5.Location = new System.Drawing.Point(410, 359);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(92, 35);
             this.button5.TabIndex = 3;
@@ -564,11 +564,11 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
-            this.dataGridView2.Location = new System.Drawing.Point(78, 65);
+            this.dataGridView2.Location = new System.Drawing.Point(56, 60);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(801, 340);
+            this.dataGridView2.Size = new System.Drawing.Size(795, 282);
             this.dataGridView2.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
@@ -630,7 +630,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(970, 493);
+            this.tabPage5.Size = new System.Drawing.Size(841, 433);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "Historial";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -656,7 +656,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(936, 477);
+            this.ClientSize = new System.Drawing.Size(912, 473);
             this.Controls.Add(this.tabControl2);
             this.Name = "Form_Inventario";
             this.Text = "Inventario";

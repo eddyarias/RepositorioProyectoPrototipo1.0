@@ -91,10 +91,10 @@
             this.TCProveedores.Controls.Add(this.tabPage1);
             this.TCProveedores.Controls.Add(this.tabPage2);
             this.TCProveedores.Controls.Add(this.tabPage5);
-            this.TCProveedores.Location = new System.Drawing.Point(12, 8);
+            this.TCProveedores.Location = new System.Drawing.Point(27, 8);
             this.TCProveedores.Name = "TCProveedores";
             this.TCProveedores.SelectedIndex = 0;
-            this.TCProveedores.Size = new System.Drawing.Size(808, 242);
+            this.TCProveedores.Size = new System.Drawing.Size(841, 242);
             this.TCProveedores.TabIndex = 0;
             // 
             // tabPage1
@@ -127,7 +127,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(800, 213);
+            this.tabPage1.Size = new System.Drawing.Size(833, 213);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -350,7 +350,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(800, 213);
+            this.tabPage2.Size = new System.Drawing.Size(833, 213);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Información";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -453,7 +453,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(800, 213);
+            this.tabPage5.Size = new System.Drawing.Size(833, 213);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "Evaluación";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -541,18 +541,18 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 256);
+            this.dataGridView1.Location = new System.Drawing.Point(31, 258);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(800, 174);
+            this.dataGridView1.Size = new System.Drawing.Size(837, 174);
             this.dataGridView1.TabIndex = 0;
             // 
             // Form_Proveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 453);
+            this.ClientSize = new System.Drawing.Size(912, 473);
             this.Controls.Add(this.TCProveedores);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form_Proveedores";

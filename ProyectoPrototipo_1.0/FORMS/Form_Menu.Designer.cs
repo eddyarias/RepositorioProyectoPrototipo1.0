@@ -112,7 +112,7 @@
             // 
             // BSalir
             // 
-            this.BSalir.Location = new System.Drawing.Point(843, 789);
+            this.BSalir.Location = new System.Drawing.Point(844, 798);
             this.BSalir.Name = "BSalir";
             this.BSalir.Size = new System.Drawing.Size(88, 39);
             this.BSalir.TabIndex = 9;
