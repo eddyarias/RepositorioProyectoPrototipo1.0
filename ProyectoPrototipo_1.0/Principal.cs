@@ -8,9 +8,6 @@ namespace ProyectoPrototipo_1._0
 {
     internal static class Principal
     {
-        /// <summary>
-        /// Punto de entrada principal para la aplicación.
-        /// </summary>
         [STAThread]
         static void Main()
         {

@@ -1,7 +1,9 @@
-﻿using System;
+﻿using ProyectoPrototipo_1._0.CLASES;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,8 +14,10 @@ namespace ProyectoPrototipo_1._0
 {
     public partial class Form_Proveedores : Form
     {
+        private FarmaciaDbContext dbContext;
         public Form_Proveedores()
         {
+            dbContext = new FarmaciaDbContext();
             InitializeComponent();
 
         }
@@ -24,6 +28,13 @@ namespace ProyectoPrototipo_1._0
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new Point((Screen.PrimaryScreen.Bounds.Width - this.Width) / 2-400,
                                       (Screen.PrimaryScreen.Bounds.Height - this.Height) / 2); ;
+
+            
+                /*// Cargar los datos de los proveedores
+                dbContext.Proveedores.Load();
+                // Asignar los datos al DataGridView
+                dataGridView1.DataSource = dbContext.Proveedores.Local.ToBindingList();*/
+
         }
         // Variable para almacenar el índice de la pestaña actual
         private int indicePestanaActual = 0;
