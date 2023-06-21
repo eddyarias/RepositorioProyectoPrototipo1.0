@@ -70,6 +70,9 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.TabSecuencialVentas.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -101,7 +104,7 @@
             this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(818, 417);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Seleccion Producto";
@@ -222,7 +225,7 @@
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(818, 417);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Datos cliente";
@@ -398,7 +401,6 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 24);
             this.comboBox2.TabIndex = 7;
-
             // 
             // checkedListBox2
             // 
@@ -410,7 +412,6 @@
             this.checkedListBox2.Name = "checkedListBox2";
             this.checkedListBox2.Size = new System.Drawing.Size(103, 55);
             this.checkedListBox2.TabIndex = 6;
-
             // 
             // label8
             // 
@@ -461,7 +462,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 1;
-
             // 
             // button1
             // 
@@ -475,6 +475,9 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label18);
+            this.tabPage4.Controls.Add(this.label17);
+            this.tabPage4.Controls.Add(this.label16);
             this.tabPage4.Controls.Add(this.button6);
             this.tabPage4.Controls.Add(this.button5);
             this.tabPage4.Controls.Add(this.button4);
@@ -487,7 +490,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(274, 299);
+            this.button6.Location = new System.Drawing.Point(296, 342);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(209, 58);
             this.button6.TabIndex = 2;
@@ -496,7 +499,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(539, 299);
+            this.button5.Location = new System.Drawing.Point(570, 342);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(209, 58);
             this.button5.TabIndex = 1;
@@ -505,12 +508,40 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(3, 299);
+            this.button4.Location = new System.Drawing.Point(25, 342);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(209, 58);
             this.button4.TabIndex = 0;
             this.button4.Text = "Enviar al correo electronico cliente";
             this.button4.UseVisualStyleBackColor = true;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(301, 20);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(204, 25);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "FACTURA N°   00001";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(42, 174);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(51, 16);
+            this.label17.TabIndex = 4;
+            this.label17.Text = "label17";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(42, 78);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(51, 16);
+            this.label18.TabIndex = 5;
+            this.label18.Text = "label18";
             // 
             // Form_Ventas
             // 
@@ -530,6 +561,7 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -578,5 +610,8 @@
         private System.Windows.Forms.Label lbTotal;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
     }
 }
