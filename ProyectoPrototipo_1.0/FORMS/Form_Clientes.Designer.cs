@@ -88,6 +88,7 @@
             this.findClientButton.TabIndex = 2;
             this.findClientButton.Text = "Buscar";
             this.findClientButton.UseVisualStyleBackColor = true;
+            this.findClientButton.Click += new System.EventHandler(this.findClientButton_Click);
             // 
             // codeLabel
             // 

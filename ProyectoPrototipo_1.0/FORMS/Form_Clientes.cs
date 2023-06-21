@@ -24,5 +24,10 @@ namespace ProyectoPrototipo_1._0
             this.Location = new Point((Screen.PrimaryScreen.Bounds.Width - this.Width) / 2-400,
                                       (Screen.PrimaryScreen.Bounds.Height - this.Height) / 2); ;
         }
+
+        private void findClientButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
