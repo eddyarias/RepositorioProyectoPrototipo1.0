@@ -73,6 +73,10 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.TabSecuencialVentas.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -475,6 +479,10 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label22);
+            this.tabPage4.Controls.Add(this.label21);
+            this.tabPage4.Controls.Add(this.label20);
+            this.tabPage4.Controls.Add(this.label19);
             this.tabPage4.Controls.Add(this.label18);
             this.tabPage4.Controls.Add(this.label17);
             this.tabPage4.Controls.Add(this.label16);
@@ -491,18 +499,20 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(42, 78);
+            this.label18.Font = new System.Drawing.Font("Consolas", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(178, 30);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(51, 16);
+            this.label18.Size = new System.Drawing.Size(56, 15);
             this.label18.TabIndex = 5;
             this.label18.Text = "label18";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(42, 174);
+            this.label17.Font = new System.Drawing.Font("Consolas", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(178, 176);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(51, 16);
+            this.label17.Size = new System.Drawing.Size(56, 15);
             this.label17.TabIndex = 4;
             this.label17.Text = "label17";
             // 
@@ -510,7 +520,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(301, 20);
+            this.label16.Location = new System.Drawing.Point(301, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(204, 25);
             this.label16.TabIndex = 3;
@@ -518,30 +528,66 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(296, 342);
+            this.button6.Location = new System.Drawing.Point(296, 355);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(209, 58);
+            this.button6.Size = new System.Drawing.Size(209, 45);
             this.button6.TabIndex = 2;
             this.button6.Text = "Anular";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(570, 342);
+            this.button5.Location = new System.Drawing.Point(570, 355);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(209, 58);
+            this.button5.Size = new System.Drawing.Size(209, 45);
             this.button5.TabIndex = 1;
             this.button5.Text = "Imprimir";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(25, 342);
+            this.button4.Location = new System.Drawing.Point(25, 355);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(209, 58);
+            this.button4.Size = new System.Drawing.Size(209, 45);
             this.button4.TabIndex = 0;
             this.button4.Text = "Enviar al correo electronico cliente";
             this.button4.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(200, 299);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(364, 16);
+            this.label19.TabIndex = 17;
+            this.label19.Text = "___________________________________________________";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(504, 315);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(38, 16);
+            this.label20.TabIndex = 18;
+            this.label20.Text = "00.00";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(414, 315);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(51, 16);
+            this.label21.TabIndex = 19;
+            this.label21.Text = "TOTAL";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(178, 151);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(386, 16);
+            this.label22.TabIndex = 20;
+            this.label22.Text = "PRODUCTO              PRECIO UNI.            CANT.           SUBTOTAL";
             // 
             // Form_Ventas
             // 
@@ -613,5 +659,9 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
     }
 }

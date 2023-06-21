@@ -101,22 +101,22 @@ namespace ProyectoPrototipo_1._0
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //if(txtBcedulaCliente.Text!=string.Empty && txtBnombresCliente.Text!= string.Empty && txtBapellidosClientes.Text!= string.Empty &&
-            //txtBtelefonoCliente.Text!= string.Empty && txtBdireccionCliente.Text!= string.Empty && txtBcorreoCliente.Text!= string.Empty)
-            //{
-            //    cedulaCLiente = int.Parse(txtBcedulaCliente.Text);
-            //    nombreCliente = txtBnombresCliente.Text;
-            //    apellidoCliente = txtBapellidosClientes.Text;
-            //    direccionCliente = txtBdireccionCliente.Text;
-            //    telefonoCliente = txtBtelefonoCliente.Text;
-            //    correoCliente = txtBcorreoCliente.Text;
+            if (txtBcedulaCliente.Text != string.Empty && txtBnombresCliente.Text != string.Empty && txtBapellidosClientes.Text != string.Empty &&
+            txtBtelefonoCliente.Text != string.Empty && txtBdireccionCliente.Text != string.Empty && txtBcorreoCliente.Text != string.Empty)
+            {
+                cedulaCLiente = int.Parse(txtBcedulaCliente.Text);
+                nombreCliente = txtBnombresCliente.Text;
+                apellidoCliente = txtBapellidosClientes.Text;
+                direccionCliente = txtBdireccionCliente.Text;
+                telefonoCliente = txtBtelefonoCliente.Text;
+                correoCliente = txtBcorreoCliente.Text;
 
                 this.AvanzarPestana();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Ingrese todos los campos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //}
+            }
+            else
+            {
+                MessageBox.Show("Ingrese todos los campos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -128,6 +128,8 @@ namespace ProyectoPrototipo_1._0
                     {
                         this.AvanzarPestana();
                         descripcionAdicionalCobro = txtBDescripcionAdicional.Text;
+                        this.imprimirCliente();
+                        this.imprimirDetalle();
                     }
                     else {
                         // Muestra un mensaje de error
@@ -138,6 +140,8 @@ namespace ProyectoPrototipo_1._0
                 {
                     this.AvanzarPestana();
                     descripcionAdicionalCobro = txtBDescripcionAdicional.Text;
+                    this.imprimirCliente();
+                    this.imprimirDetalle();
                 }
             }
             else
@@ -253,6 +257,27 @@ namespace ProyectoPrototipo_1._0
             }
 
             return sb.ToString();
+        }
+
+        public void imprimirCliente()
+        {
+            String impresionCliente;
+            impresionCliente =
+                "                   DATOS CLIENTE "+"\n"+
+                "CEDULA:                          ." + cedulaCLiente +"\n"+
+                "NOMBRE:                          ." + nombreCliente + "\n"+
+                "APELLIDO:                        ." + apellidoCliente + "\n"+
+                "TELEFONO:                        ." + telefonoCliente + "\n"+
+                "DIRECCION:                       ." + direccionCliente + "\n"+
+                "CORREO:                          ." + correoCliente + "\n"; 
+                this.label18.Text = impresionCliente;
+        }
+
+        public void imprimirDetalle()
+        {
+            this.label17.Text=ImprimirInformacion(arregloPrecios,arregloCantidad,arregloProductos)+"\n" +
+                "Descripción adicional: "+descripcionAdicionalCobro;
+            this.label20.Text = TotalVenta.ToString();
         }
     }
 }
